@@ -18,7 +18,12 @@ function App() {
     <section className={`${darkMode ? "bg-dark text-white" : "bg-light"} min-vh-100`}>
       <div className="container my-4 form-check form-switch">
         <label className="form-check-label me-5 mt-4" htmlFor="activate">
-          <input onChange={handleCheckboxChange} type="checkbox" className="form-check-input bg-dark " id="activate" />{" "}
+          <input
+            onChange={handleCheckboxChange}
+            type="checkbox"
+            className="form-check-input bg-secondary "
+            id="activate"
+          />{" "}
           Mode sombre ou clair ?
         </label>
 
