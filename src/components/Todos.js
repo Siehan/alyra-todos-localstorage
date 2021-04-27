@@ -79,12 +79,7 @@ const Todos = () => {
   useEffect(() => {
     window.localStorage.setItem("my-todos-list", JSON.stringify(todos));
   }, [todos]);
-  /*
-  useEffect(() => {
-    document.title =
-     // todos.length === 0 ? `Que devez-vous faire aujourd'hui ?` : `Vous avez ${todos.length - completedCount} tâche(s) à accomplir !`;
-  }, [todos]);
-*/
+
   useEffect(() => {
     document.title =
       completedCount === todos.length
@@ -99,9 +94,9 @@ const Todos = () => {
       </h2>
 
       <h3 className="text-end-5 mb-5 text-primary">
-        {todos.length === 0 || completedCount.length === 5
+        {completedCount === todos.length
           ? `Que devez-vous faire aujourd'hui ?`
-          : `Vous avez ${todos.length} tâche(s) à accomplir !`}
+          : `Vous avez ${todos.length - completedCount} tâche(s) à accomplir !`}
       </h3>
 
       <SelectTodos filter={filter} setFilter={setFilter} />
