@@ -19,9 +19,9 @@ Mettez en place _mode dark_ en option. Vous pouvez utiliser le markup suivant :
 
 ```html
 <!-- bootstrap5 markup pour un switch -->
-<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="activate" />
-  <label class="form-check-label" for="activate"> Mode Sombre </label>
+<div className="form-check form-switch">
+  <input className="form-check-input" type="checkbox" id="activate" />
+  <label className="form-check-label" htmlFor="activate"> Mode Sombre </label>
 </div>
 ```
 
