@@ -79,11 +79,18 @@ const Todos = () => {
   useEffect(() => {
     window.localStorage.setItem("my-todos-list", JSON.stringify(todos));
   }, [todos]);
-
+  /*
   useEffect(() => {
     document.title =
-      todos.length === 0 ? `Que devez-vous faire aujourd'hui ?` : `Vous avez ${todos.length} tâche(s) à accomplir !`;
+     // todos.length === 0 ? `Que devez-vous faire aujourd'hui ?` : `Vous avez ${todos.length - completedCount} tâche(s) à accomplir !`;
   }, [todos]);
+*/
+  useEffect(() => {
+    document.title =
+      completedCount === todos.length
+        ? `Que devez-vous faire aujourd'hui ?`
+        : `Vous avez ${todos.length - completedCount} tâche(s) à accomplir !`;
+  }, [todos, completedCount]);
 
   return (
     <main>
