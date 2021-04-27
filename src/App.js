@@ -21,7 +21,7 @@ function App() {
           <input
             onChange={handleCheckboxChange}
             type="checkbox"
-            className="form-check-input bg-secondary "
+            className="form-check-input bg-secondary"
             id="activate"
           />{" "}
           Mode sombre ou clair ?
