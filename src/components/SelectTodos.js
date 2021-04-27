@@ -8,7 +8,7 @@ const SelectTodos = (props) => {
       <label className="input-group-text" htmlFor="select">
         Filtrer les tâches
       </label>
-      <select className="form-select" id="select" value={filter} onChange={handleSelectChange}>
+      <select className="form-select p-2" id="select" value={filter} onChange={handleSelectChange}>
         {/* eslint-disable-next-line */}
         <option value="all">Toutes 🌈</option>
         {/* eslint-disable-next-line */}

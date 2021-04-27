@@ -10,13 +10,13 @@ const AddTodoForm = (props) => {
 
   return (
     <form onSubmit={handleFormSubmit}>
-      <div className="input-group mb-2">
+      <div className="input-group mb-2 pt-2">
         <label className="input-group-text" htmlFor="todo">
           Ajouter une tâche
         </label>
-        <input className="form-control" id="todo" required />
+        <input className="form-control p-2" id="todo" required />
       </div>
-      <button type="submit" className="btn btn-success mt-5">
+      <button type="submit" className="btn btn-success mt-4">
         allons-y !
       </button>
     </form>
